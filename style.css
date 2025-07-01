@@ -1,0 +1,190 @@
+/* GENERAL SETTINGS */
+body {
+  margin: 0;
+  font-family: 'Unica One', 'Orbitron', 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #e4c77b;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #f8e99b;
+  text-shadow: 0 0 4px #e4c77b;
+}
+
+.section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.dark {
+  background-color: #1a1a1a;
+}
+
+.hero {
+  background: linear-gradient(180deg, #0e0e0e, #1a1a1a);
+  text-align: center;
+  padding: 6rem 2rem;
+  position: relative;
+  border-bottom: 2px solid #333;
+}
+
+.hero .logo-symbol {
+  font-size: 3rem;
+  color: #e4c77b;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e4c77b;
+  color: #0e0e0e;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #e4c77b;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f9e8a0;
+  transform: scale(1.05);
+}
+
+/* MANIFESTO SECTION */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #e4c77b;
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: '‣';
+  color: #e4c77b;
+  margin-right: 0.5rem;
+}
+
+/* COUNCIL GRID */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.member-card {
+  padding: 1rem;
+  border: 1px solid #444;
+  background-color: #121212;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #111;
+  padding: 12px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.03);
+}
+
+.member-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+/* PFP GRID */
+.pfp-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.pfp-grid img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.pfp-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #e4c77b;
+}
+
+/* ALPHA LIST */
+.alpha-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.alpha-list a {
+  padding: 1rem;
+  background-color: #111;
+  border-left: 5px solid #e4c77b;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #777;
+}
+.logo-svg svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
