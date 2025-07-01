@@ -18,7 +18,7 @@ fetch('members.json')
       card.target = '_blank';
 
       const img = document.createElement('img');
-      img.src = https://unavatar.io/x/${member.username};  // ✅ BACKTICKS HERE
+      img.src = https://unavatar.io/x/${member.username};  // THIS LINE IS FIXED
       img.alt = member.name;
       img.className = 'member-avatar';
 
