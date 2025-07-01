@@ -7,6 +7,10 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3 {
   font-weight: 400;
   margin-bottom: 0.5em;
@@ -48,6 +52,12 @@ a:hover {
   font-size: 3rem;
   color: #e4c77b;
   margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 .hero h1 {
@@ -104,15 +114,6 @@ ul li::before {
 }
 
 .member-card {
-  padding: 1rem;
-  border: 1px solid #444;
-  background-color: #121212;
-  text-align: center;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.member-card {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -122,6 +123,7 @@ ul li::before {
   text-decoration: none;
   color: #f0f0f0;
   font-size: 1rem;
+  border: 1px solid #444;
   transition: transform 0.2s ease;
 }
 
@@ -144,6 +146,10 @@ ul li::before {
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem 0;
+}
+
+.pfp-item {
+  text-align: center;
 }
 
 .pfp-grid img {
@@ -183,6 +189,43 @@ ul li::before {
   font-size: 0.9rem;
   color: #777;
 }
+
+/* AOS compatibility (optional fallback) */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 3rem 1.2rem;
+  }
+
+  .pfp-grid img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
 .logo-svg svg {
   width: 48px;
   height: 48px;
