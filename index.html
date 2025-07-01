@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <div class="<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 2L15 8H9L12 2Z" fill="#fff"/>
+  <path d="M5 21H19" stroke="#fff" stroke-width="2"/>
+  <path d="M12 8V21" stroke="#fff" stroke-width="2"/>
+  <path d="M7 10C7 10 5 15 5 16.5C5 17.3284 5.67157 18 6.5 18C7.32843 18 8 17.3284 8 16.5C8 15 7 10 7 10Z" stroke="#fff" stroke-width="2"/>
+  <path d="M17 10C17 10 19 15 19 16.5C19 17.3284 18.3284 18 17.5 18C16.6716 18 16 17.3284 16 16.5C16 15 17 10 17 10Z" stroke="#fff" stroke-width="2"/>
+</svg>">
+  <!-- SVG code goes here -->
+</div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Balance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="hero" data-aos="fade-down">
+    <div class="logo-symbol">&#9875;</div>
+    <h1>Justice Over Clout</h1>
+    <p>Welcome to The Balance</p>
+    <a href="#manifesto" class="cta-button">Enter the Movement</a>
+  </header>  <section id="mission-vision" class="section" data-aos="fade-up">
+    <h2>Our Mission & Vision</h2>
+    <p>
+      Our mission is to restore equity in visibility and amplify the unheard voices in crypto. We envision a future where authentic contributors, regardless of follower count, earn recognition and rewards for quality insights—not just noise.
+    </p>
+  </section>  <section id="how-it-started" class="section dark" data-aos="fade-up">
+    <h2>How All This Started</h2>
+    <article>
+      <blockquote>“Justice is not found in clout—it’s forged by the unheard.” – The Balance Manifesto</blockquote><h3>The Problem: A New Kind of Oppression in Crypto</h3>
+  <p>The rise of InfoFi—Information Finance—promised to democratize attention...</p>
+
+  <h3>The Backlash: Algorithms Gone Rogue</h3>
+  <p>Kaito, once hailed as the leader in crypto-native reputation systems, faced mounting criticism...</p>
+
+  <h3>The Resistance: Who We Are</h3>
+  <p>The Balance is not just a group. It is a movement...</p>
+
+  <h3>Our Vision: What The Balance Stands For</h3>
+  <ul>
+    <li>Justice Over Clout</li>
+    <li>Visibility for the Underrated</li>
+    <li>Collective Growth</li>
+    <li>Web3 Values</li>
+  </ul>
+
+  <h3>Our Tools: How We Build the Future</h3>
+  <ul>
+    <li>Community Spaces</li>
+    <li>Alpha Drops</li>
+    <li>PFP Identity</li>
+    <li>Content Amplification</li>
+    <li>Platform Independence</li>
+  </ul>
+
+  <h3>Why “The Balance”?</h3>
+  <p>Because that’s what this movement is: a counterweight to the distorted scale of influence...</p>
+
+  <h3>Join the Movement</h3>
+  <p>If you're tired of shouting into the void... Then you're already one of us.</p>
+
+  <blockquote>“We are not building the next trend. We are restoring the truth behind it.”</blockquote>
+</article>
+
+  </section>  <section id="council" class="section" data-aos="fade-up">
+    <h2>The Council of Echoes</h2>
+    <div id="members" class="members-grid"></div>
+  </section>  <section id="pfp-collection" class="section dark" data-aos="zoom-in">
+    <h2>Symbols of Balance</h2>
+    <div class="pfp-grid">
+      <div class="pfp-item"><img src="pfp1.png" alt="PFP 1" /><a href="pfp1.png" download class="cta-button">Download</a></div>
+      <div class="pfp-item"><img src="pfp2.png" alt="PFP 2" /><a href="pfp2.png" download class="cta-button">Download</a></div>
+      <div class="pfp-item"><img src="pfp3.png" alt="PFP 3" /><a href="pfp3.png" download class="cta-button">Download</a></div>
+      <div class="pfp-item"><img src="pfp4.png" alt="PFP 4" /><a href="pfp4.png" download class="cta-button">Download</a></div>
+      <div class="pfp-item"><img src="pfp5.png" alt="PFP 5" /><a href="pfp5.png" download class="cta-button">Download</a></div>
+    </div>
+  </section>  <section id="alpha" class="section" data-aos="fade-up">
+    <h2>Hall of Alphas</h2>
+    <div class="alpha-list">
+      <a href="https://docs.google.com/alpha1" target="_blank">Testnet Tools</a>
+      <a href="https://docs.google.com/alpha2" target="_blank">Drop Guide</a>
+    </div>
+  </section>  <section id="join" class="section dark" data-aos="fade-up">
+    <h2>Join the Order</h2>
+    <a href="https://t.me/yourtelegram" class="cta-button">Telegram</a>
+    <a href="https://discord.gg/yourdiscord" class="cta-button">Discord</a>
+    <a href="https://forms.gle/yourform" class="cta-button">Apply to Be Listed</a>
+  </section>  <footer class="footer">
+    <p>Echo the unheard. Defend the Balance.</p>
+    <p>Built by The Balance Council</p>
+  </footer>  <script>
+  AOS.init();
+
+  fetch('members.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('members');
+      data.forEach(member => {
+        const card = document.createElement('a');
+        card.href = member.link;
+        card.className = 'member-card';
+        card.target = '_blank';
+
+        const img = document.createElement('img');
+        img.src = https://unavatar.io/x/${member.username};
+        img.alt = member.name;
+        img.className = 'member-avatar';
+
+        const span = document.createElement('span');
+        span.textContent = member.name;
+
+        card.appendChild(img);
+        card.appendChild(span);
+        container.appendChild(card);
+      });
+    });
+</script></body>
+</html>
